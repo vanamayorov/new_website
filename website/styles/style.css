@@ -1,0 +1,612 @@
+a {
+	color: white !important;
+}
+p {
+	margin: 0;
+}
+header {
+	max-width: 100%;
+	height: 100vh;
+	background: url("../images/background_photo.jpg") center center no-repeat;
+	background-size: cover;
+	position: relative;
+}
+header > .container {
+	position: relative;
+	height: 100%;
+	padding: 0;
+}
+.navbar-brand {
+	position: absolute;
+	width: 100%;
+	max-width: 100px;
+	top: 10px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.hamburger-menu {
+	position: fixed;
+	top: 25px;
+	right: 14px;
+	width: 37px;
+	height: 37px;
+	display: flex;
+	background-color: #191919;
+	border-radius: 4px;
+	cursor: pointer;
+	z-index: 999;
+}
+.hamburger-menu i {
+	font-size: 25px;
+	color: white;
+	margin: auto;
+}
+.hamburger-menu .fa-times {
+	display: none;
+}
+.hamburger-menu .fa-times.open {
+	display: block;
+}
+.hamburger-menu .fa-bars.open {
+	display: none;
+}
+.nav-list {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	list-style: none;
+	color: #fff;
+	background: #191919;
+	z-index: 900;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	opacity: 0;
+	transform: scale(0);
+	transition: opacity 650ms;
+}
+.nav-list .nav-item {
+	display: inline-block;
+	font-family: "Montserrat", Helvetica, Arial, sans-serif;
+	font-size: 24px;
+	padding-top: 30px;
+	font-weight: 700;
+	line-height: 24px;
+	letter-spacing: 0.06em;
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.nav-list.open {
+	opacity: 1;
+	transform: scale(1);
+}
+.hero-text {
+	position: absolute;
+	top: 45%;
+	left: 50%;
+	transform: translate(-50%, -45%);
+	text-align: center;
+}
+.hero-text h1 {
+	font-family: "Montserrat", Helvetica, Arial, sans-serif;
+	font-size: 60px;
+	font-weight: 700;
+	margin: 0px 0px;
+}
+.slogan_2 {
+	font-family: "Crimson Text", "Times New Roman", Times, serif;
+	font-weight: 400;
+	font-style: italic;
+	font-size: 28px;
+}
+.btn {
+	margin-top: 45px;
+	padding: 14px 36px;
+	font-size: 18px;
+	line-height: 28px;
+	border-radius: 4px;
+	text-transform: uppercase;
+	letter-spacing: 0.06em;
+	border-width: 2px;
+	transition: .3s;
+	font-family: "Montserrat", Helvetica, Arial, sans-serif;
+	font-weight: 700;
+	color: #191919 !important;
+	background-color: #ffea00;
+	border-color: #ffea00;
+}
+.call_us {
+	font-family: "Crimson Text", "Times New Roman", Times, serif;
+	font-style: italic;
+	font-size: 17px;
+	font-weight: 400;
+}
+.number {
+	margin-top: -5px;
+	font-family: "Montserrat", Helvetica, Arial, sans-serif;
+	font-weight: 700;
+	font-size: 28px;
+	color: white;
+}
+h2 {
+	font-family: "Montserrat", Helvetica, Arial, sans-serif;
+	color: #434345;
+	font-size: 45px;
+	font-weight: 700;
+}
+hr {
+	height: 2px;
+	width: 70px;
+	text-align: center;
+	background: linear-gradient(-90deg, #82c650 0%, #44b872 100%);
+	margin: 0 auto;
+	margin-bottom: 30px;
+	border: 0;
+}
+.welcome_info {
+	font-family: "Crimson Text", "Times New Roman", Times, serif;
+	font-size: 17px;
+	font-weight: 400;
+	color: #787878;
+	padding-bottom: 60px;
+}
+.welcome p, li {
+	font-family: "Crimson Text", "Times New Roman", Times, serif;
+	font-size: 17px;
+	font-weight: 400;
+	color: #787878;
+}
+.welcome li::before {
+	content: "\2022";
+	margin-right: 5px;
+	color: #82c650;
+}
+h4 {
+	font-family: "Montserrat", Helvetica, Arial, sans-serif;
+	font-weight: 700;
+	color: #434345;
+}
+.unit p {
+	font-family: "Crimson Text", "Times New Roman", Times, serif;
+	font-size: 17px;
+	font-weight: 400;
+	line-height: 1.41176;
+	color: #787878;
+}
+.listing {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+.unit li {
+	font-family: "Crimson Text", "Times New Roman", Times, serif;
+	font-size: 17px;
+	font-weight: 400;
+	line-height: 1.41176;
+	color: #787878;
+}
+.about {
+	background: #f2f4fa;
+	padding-top: 50px;
+}
+blockquote div {
+	position: relative;
+	padding-left: 40px;
+}
+.about p {
+	font-family: "Crimson Text", "Times New Roman", Times, serif;
+	font-size: 17px;
+	font-weight: 400;
+	line-height: 1.41176;
+	color: #787878;
+	padding: 40px 0 10px 0;
+}
+.about .btn {
+	transform: translateX(30%);
+}
+blockquote .quote::before {
+	display: inline-block;
+	position: absolute;
+	width: 30px;
+	height: 2px;
+	top: 16px;
+	left: 0px;
+	background: #434345;
+	content: '';
+}
+.btn-primary {
+	transform: translateY(-40px);
+	color: #fff !important;
+	background-color: #82c650;
+	border-color: #82c650;
+	white-space: normal;
+	text-transform: uppercase;
+	letter-spacing: 0.06em;
+	border-width: 2px;
+	transition: .3s;
+	backface-visibility: hidden;
+	font-family: "Montserrat", Helvetica, Arial, sans-serif;
+	font-weight: 700;
+	padding: 17px 24px;
+	font-size: 18px;
+	line-height: 1.2;
+	border-radius: 5px;
+}
+.btn-primary:hover {
+	color: #fff;
+	background-color: #69ab38;
+	border-color: #69ab38;
+}
+.about img {
+	display: block;
+	transform: translateX(-70px);
+	width: 570px;
+	height: 590px;
+}
+.testimonials {
+	padding: 80px 0;
+}
+.testim {
+	position: relative;
+}
+.testimonials .row {
+	padding: 80px 0;
+}
+.testimonials .quote_info {
+	padding: 60px 25px 20px 30px;
+	background: #fff;
+	border-radius: 3px;
+	box-shadow: 0 3px 11px 0 rgba(0, 0, 0, 0.15);
+}
+.testim::before {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	left: auto;
+	z-index: 2;
+	font-family: "Material Design Icons";
+	font-size: 54px;
+	line-height: 54px;
+	color: #82c650;
+	content: "\2033";
+	transform: none;
+}
+.testim img {
+	display: block;
+	position: absolute;
+	z-index: 2;
+	top: -50px;
+	right: 250px;
+	border-radius: 50%;
+	width: 80px;
+	height: 80px;
+	text-align: left;
+}
+.testim q {
+	text-align: left;
+	font-family: "Crimson Text", "Times New Roman", Times, serif;
+	font-size: 17px;
+	font-weight: 400;
+	line-height: 1.41176;
+	color: #787878;
+}
+.testimonials_p {
+	margin-top: 20px;
+	font-family: "Crimson Text", "Times New Roman", Times, serif;
+	color: #82c650;
+	font-weight: 700;
+	text-align: left;
+	font-style: normal;
+	font-size: 18px;
+}
+small {
+	font-family: "Crimson Text", "Times New Roman", Times, serif;
+	color: #787878;
+	text-align: left;
+	font-size: 13px;
+	font-weight: 400;
+	font-style: italic;
+}
+.one_philosophy {
+	background: url("../images/bg2.jpg") no-repeat center center;
+	background-size: cover;
+	color: white;
+	padding: 100px 0;
+}
+.one_philosophy .philosophy_hr {
+	height: 2px;
+	width: 70px;
+	background: white;
+	border: 0;
+}
+.slogan_3 p {
+	font-style: italic;
+	line-height: 1.2;
+	font-size: 30px;
+	font-family: "Crimson Text", "Times New Roman", Times, serif;
+	font-weight: 400;
+}
+.philosophy p {
+	font-family: "Montserrat", Helvetica, Arial, sans-serif;
+	font-weight: 700;
+	line-height: 1.2;
+	font-size: 45px;
+}
+.info p {
+	font-family: "Crimson Text", "Times New Roman", Times, serif;
+	font-size: 17px;
+	font-weight: 400;
+	line-height: 1.41176;
+}
+iframe {
+	width: 300px;
+}
+footer {
+	background-color: rgb(25, 25, 25);
+	padding: 60px 0 20px 0;
+}
+footer p {
+	font-family: "Crimson Text", "Times New Roman", Times, serif;
+	font-size: 17px;
+	font-weight: 400;
+	line-height: 1.41176;
+	font-style: italic;
+	color: #434345;
+	margin-top: 4px;
+}
+.social li a {
+	color: white;
+	margin-right: 15px;
+}
+.social {
+	margin-top: 30px;
+}
+dd {
+	color: #787878;
+	font-weight: 400;
+}
+dd a {
+	font-family: "Crimson Text", "Times New Roman", Times, serif;
+	font-size: 17px;
+	color: #787878 !important;
+	font-weight: 400;
+}
+dd a:hover {
+	color: #787878;
+}
+.fab:hover {
+	color: #82c650;
+}
+h6 {
+	font-family: "Montserrat", Helvetica, Arial, sans-serif;
+	font-weight: 700;
+	color: white;
+}
+footer .form-group input {
+	background: rgb(25, 25, 25);
+	border: 1px solid grey;
+	margin-top: 20px;
+	width: 300px;
+}
+footer .form-group textarea {
+	background: rgb(25, 25, 25);
+	border: 1px solid grey;
+	margin-top: 20px;
+	width: 300px;
+}
+footer .btn {
+	transform: translateY(-35px);
+	color: #fff;
+	background-color: #82c650;
+	border-color: #82c650;
+	padding: 10px 45px;
+	font-size: 12px;
+	line-height: 24px;
+	border-radius: 3px;
+	border-width: 1px;
+	margin-left: 20px;
+}
+footer .btn:hover {
+	color: #fff;
+	background-color: #69ab38;
+	border-color: #69ab38;
+}
+.policy p {
+	font-family: "Crimson Text", "Times New Roman", Times, serif;
+	color: #434345 !important;
+	font-weight: 400;
+	font-style: normal;
+}
+.policy a {
+	color: #434345 !important;
+}
+@media (min-width: 576px) {
+	.navbar-brand {
+		max-width: 200px;
+	}
+	.hamburger-menu {
+		top: 35px;
+		right: 75px;
+	}
+	.about .btn {
+		transform: translateX(50%);
+	}
+	.testim img {
+		display: block;
+		position: absolute;
+		z-index: 2;
+		top: -50px;
+		right: 350px;
+		border-radius: 50%;
+		width: 80px;
+		height: 80px;
+		text-align: center;
+	}
+	.one_philosophy .btn {
+		padding: 9px 16px;
+		font-size: 14px;
+	}
+	iframe {
+		width: 400px;
+	}
+	h6 {
+		text-align: center;
+	}
+	footer .form-group input {
+		margin: 15px auto;
+	}
+	footer .form-group textarea {
+		margin: 10px auto;
+	}
+	footer .btn {
+		transform: translateX(35%);
+	}
+	h6 {
+		text-align: center;
+	}
+	footer .form-group textarea, footer .form-group input {
+		width: 400px;
+	}
+}
+@media (min-width: 768px) {
+	.welcome img {
+		display: block;
+		transform: translateX(100%);
+	}
+	.testim img {
+		display: block;
+		position: absolute;
+		z-index: 2;
+		top: -50px;
+		right: 50px;
+		border-radius: 50%;
+		width: 80px;
+		height: 80px;
+		text-align: left;
+	}
+	.about .btn {
+		transform: translateX(85%);
+	}
+	footer .btn {
+		transform: translateX(85%);
+	}
+	footer .form-group textarea, footer .form-group input {
+		width: 400px;
+	}
+	.main .pictures img {
+		height: initial;
+	}
+}
+@media (min-width: 992px) {
+	header>.container {
+		padding: 0 15px;
+	}
+	.hamburger-menu {
+		display: none;
+	}
+	.navbar-brand {
+		position: initial;
+		transform: initial;
+	}
+	.nav-list {
+		position: initial;
+		width: initial;
+		height: initial;
+		background-color: initial;
+		flex-direction: row;
+		opacity: initial;
+		transform: initial;
+		transition: initial;
+		margin: 0;
+		padding: 0;
+	}
+	.nav-item {
+		margin: 0 15px;
+		display: inline-block;
+		font-family: "Montserrat", Helvetica, Arial, sans-serif;
+		font-size: 14px !important;
+		padding-top: 30px;
+		font-weight: 700;
+		line-height: 24px;
+		letter-spacing: 0.06em;
+		color: white;
+		text-decoration: none;
+		text-transform: uppercase;
+	}
+	.nav-item:last-child {
+		margin-right: 5px;
+	}
+	.last .nav-link:hover::before {
+		transform: scaleX(0) !important;
+	}
+	.nav-link {
+		position: relative;
+		padding: 0;
+	}
+	.nav-link::before {
+		content: "";
+		position: absolute;
+		left: 0;
+		bottom: -3px;
+		background-color: #ffea00;
+		;
+		width: 100%;
+		height: 2px;
+		transform: scaleX(0);
+		transform-origin: center;
+		transition: transform 650ms;
+	}
+	.nav-link:hover::before {
+		transform: scaleX(1);
+	}
+	.about .btn {
+		transform: translateX(10%);
+	}
+	.testim img {
+		display: block;
+		position: absolute;
+		z-index: 2;
+		top: -50px;
+		right: 250px;
+		border-radius: 50%;
+		width: 80px;
+		height: 80px;
+		text-align: left;
+	}
+	.philosophy p, .slogan_3 p, .info p {
+		text-align: left;
+	}
+	.one_philosophy .btn {
+		padding: 17px 24px;
+		font-size: 18px;
+		transform: translateX(-10%);
+	}
+	footer .btn {
+		transform: translateX(0);
+	}
+	footer .form-group textarea, footer .form-group input {
+		width: 400px;
+	}
+}
+@media (min-width: 1200px) {
+	h6 {
+		text-align: left;
+		margin-left: 40px;
+	}
+	footer .btn {
+		margin: 4px auto;
+		transform: translateX(40px);
+		padding: 7px 35px;
+	}
+	.social {
+		margin-top: 15px;
+		padding-right: 200px;
+	}
+	.nav-list .nav-item {
+		margin-left: 10px;
+	}
+}
